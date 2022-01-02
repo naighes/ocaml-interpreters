@@ -1,19 +1,19 @@
 open Parser
 (*
 
-a) n -ss-> n
+  a) n -ss-> n
 
-         E1 -ss-> E1'
-b) ------------------------
-   E1 op E2 -ss-> E1' op E2
+           E1 -ss-> E1'
+  b) ------------------------
+     E1 op E2 -ss-> E1' op E2
 
-         E2 -ss-> E2'
-c) ------------------------
-    v op E2 -ss-> v op E2'
+           E2 -ss-> E2'
+  c) ------------------------
+      v op E2 -ss-> v op E2'
 
-     n1 op n2 = n
-d) ----------------
-   n1 op n2 -ss-> n
+       n1 op n2 = n
+  d) ----------------
+     n1 op n2 -ss-> n
 
 *)
 
@@ -35,11 +35,11 @@ let rec eval_ss e =
 
 (*
 
-a) n -bs-> n
+  a) n -bs-> n
 
-   E1 -bs-> n1    E2 -bs-> n2   n1 op n2 = n
-b) -----------------------------------------
-                E1 op E2 -> n
+     E1 -bs-> n1    E2 -bs-> n2   n1 op n2 = n
+  b) -----------------------------------------
+                  E1 op E2 -> n
 
 *)
 let rec eval_bs e =
