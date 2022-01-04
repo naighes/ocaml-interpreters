@@ -1,6 +1,6 @@
 open Parser
 (*
-  Semantics (call-by-name):
+  Semantics:
   NOTE: the semantics is nondeterministic, the
         implementation is not.
   -----------------------------------------------------
